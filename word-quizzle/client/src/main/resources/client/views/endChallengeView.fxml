@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="308.0" prefWidth="493.0" stylesheets="@../styles/endChallengeView.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.EndChallengeController">
+   <children>
+      <ImageView fitHeight="54.0" fitWidth="121.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/logo.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="wonLabel" alignment="CENTER" layoutX="137.0" layoutY="38.0" prefHeight="22.0" prefWidth="219.0" text="Won!" visible="false">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="drawLabel" alignment="CENTER" layoutX="147.0" layoutY="48.0" prefHeight="22.0" prefWidth="219.0" text="Draw!" visible="false">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="lostLabel" alignment="CENTER" layoutX="137.0" layoutY="38.0" prefHeight="22.0" prefWidth="219.0" text="Lost!" visible="false">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="backButton" layoutX="419.0" layoutY="262.0" mnemonicParsing="false" onAction="#backButtonAction" prefHeight="32.0" prefWidth="59.0" text="Back" textAlignment="CENTER" textFill="WHITE">
+         <effect>
+            <DropShadow color="#0000009f" height="25.0" offsetX="2.0" offsetY="2.0" radius="13.25" spread="0.2" width="30.0" />
+         </effect>
+      </Button>
+      <GridPane fx:id="gridPane" alignment="CENTER" layoutX="97.0" layoutY="99.0">
+        <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+      </GridPane>
+      <Separator layoutX="97.0" layoutY="96.0" prefWidth="300.0" />
+      <Label layoutX="237.0" layoutY="81.0" text="You" />
+      <Label fx:id="friendLabel" alignment="CENTER" layoutX="332.0" layoutY="81.0" text="Friend" />
+      <Label layoutX="130.0" layoutY="81.0" text="Words" />
+   </children>
+</AnchorPane>

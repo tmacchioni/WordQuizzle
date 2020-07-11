@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css?family=Lilita+One");
+
+*{
+    -fx-font-family: 'Lilita One';
+}
+
+.root{
+    -fx-background-color:  #3E49BB;
+}
+
+#waitingLabel{
+    -fx-text-fill: white;
+    -fx-font-size: 23px;
+}
+
+#cancelButton{
+    -fx-font-size: 12px;
+    -fx-background-color:  #EC4C32;
+}

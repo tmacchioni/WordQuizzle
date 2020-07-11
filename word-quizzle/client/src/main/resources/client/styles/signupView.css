@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css?family=Lilita+One");
+
+*{
+    -fx-font-family: 'Lilita One';
+}
+
+.root{
+    -fx-background-color:  #3E49BB;
+}
+
+.text{
+    -fx-fill: white;
+    -fx-stroke: black;
+    -fx-stroke-width: 0.5px;
+    -fx-effect: dropshadow(one-pass-box, black, 0, 0, 0, 1.5);
+}
+
+#signupButton{
+    -fx-font-size: 18px;
+    -fx-background-color:  #f4a802;
+}
+
+#goBackButton{
+    -fx-background-color:  #ffcd00;
+    -fx-font-size: 20px;
+    -fx-padding: 0 0;
+}
+
+
+#username {
+    -fx-font-size: 18px;
+    -fx-prompt-text-fill: rgb(221, 221, 221);
+
+}
+
+#username .text{
+    -fx-effect: none;
+    -fx-stroke-width: 0px;
+
+}
+
+#password{
+    -fx-font-size: 18px;
+    -fx-prompt-text-fill: rgb(221, 221, 221);
+
+}
+
+#password .text{
+    -fx-effect: none;
+    -fx-stroke-width: 0px;
+
+}
+
+#done{
+    -fx-font-size: 18px;
+}

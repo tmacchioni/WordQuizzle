@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css?family=Lilita+One");
+
+*{
+    -fx-font-family: 'Lilita One';
+}
+
+.root{
+    -fx-background-color:  #3E49BB;
+}
+
+.text{
+    -fx-fill: white;
+    -fx-stroke: black;
+    -fx-stroke-width: 0.5px;
+    -fx-effect: dropshadow(one-pass-box, black, 0, 0, 0, 1.5);
+}
+
+#drawLabel .text{
+    -fx-fill: white;
+    -fx-font-size: 30px;
+}
+
+#wonLabel .text{
+    -fx-fill: #32c12c;
+    -fx-font-size: 30px;
+}
+
+#lostLabel .text{
+    -fx-fill: #EC4C32;
+    -fx-font-size: 30px;
+}
+
+#gridPane{
+    -fx-font-size: 15px;
+}
+
+
+#backButton{
+    -fx-font-size: 15px;
+    -fx-background-color:  #EC4C32;
+}

@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css?family=Lilita+One");
+
+*{
+    -fx-font-family: 'Lilita One';
+}
+
+.root{
+    -fx-background-color:  #3E49BB;
+}
+
+.text {
+    -fx-fill: white;
+    -fx-stroke: black;
+    -fx-stroke-width: 0.5px;
+    -fx-effect: dropshadow(one-pass-box, black, 0, 0, 0, 1.5);
+}
+
+#friendsTable{
+    -fx-padding: 0 0;
+}
+
+
+#friendsTable:row-selection{
+    -fx-background-color: rgb(126, 147, 250);
+}
+
+
+
+.table-column .label {
+    -fx-fill: white;
+    -fx-background-color:  #526EFF;
+}
+
+.table-column{
+    -fx-alignment: CENTER;
+    -fx-padding: 0 0;
+}
+
+.table-view .table-row-cell {
+    -fx-control-inner-background: rgb(118, 140, 252);
+    -fx-control-inner-background-alt: rgb(151, 168, 252);
+}
+/*
+.table-row-cell .text{
+    -fx-fill: #9E9E9E;
+    -fx-stroke: #9E9E9E;
+    -fx-stroke-width: 0px;
+}*/
+
+.text-field{
+    -fx-font-size: 18px;
+}
+
+.text-field .text{
+    -fx-stroke-width: 0px;
+    -fx-effect: none;
+}
+
+#playButton{
+    -fx-font-size: 28px;
+    -fx-background-color:  #32c12c;
+}
+
+#logoutButton{
+    -fx-font-size: 15px;
+    -fx-background-color:  #EC4C32;
+}
+
+#addFriendButton{
+    -fx-font-size: 14px;
+    -fx-background-color:  #ffcd00;
+}
+
+
+#username .text{
+    -fx-font-size: 30px;
+    -fx-fill: white;
+    -fx-stroke: black;
+    -fx-stroke-width: 1px;
+}
+
+#points .text{
+    -fx-fill: #ffcd00;
+    -fx-font-size: 18px;
+
+}
+
+#exitButton{
+    -fx-background-color: transparent;  
+}
+
+#exitButton .text{
+    -fx-fill: rgb(226, 53, 26);
+    -fx-font-size: 20px;
+    -fx-stroke: black;
+    -fx-stroke-width: 0.5px;
+}
+
